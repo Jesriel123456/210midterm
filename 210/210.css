@@ -1,0 +1,150 @@
+/* BARBIE CSS ZEN GARDEN THEME */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap');
+
+/* BODY */
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background-image:url("castle.avif");
+    background-size:cover;        /* Makes image fill the screen */
+    background-position:center;   /* Centers the image */
+    background-repeat:no-repeat;  /* Prevents repeating */
+    background-attachment:fixed;
+    color:rgb(10, 10, 10);
+}
+
+/* MAIN WRAPPER */
+.page-wrapper{
+    width:85%;
+    margin:auto;
+}
+
+/* HEADER */
+header{
+    background:url("head.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding:200px;
+    text-align:center;
+    border-radius:20px;
+}
+
+header h1{
+    font-family:'Pacifico',cursive;
+    font-size:80px;
+    color:#f4e5e5;
+    text-shadow:3px 3px rgb(240, 7, 240);
+}
+
+header h2{
+    font-size:30px;
+    color: rgb(255, 0, 106);
+}
+
+/* CONTENT BOX */
+.summary,
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements{
+    background:rgba(255,255,255,0.2);
+    padding:25px;
+    margin:25px 0;
+    border-radius:20px;
+    backdrop-filter:blur(5px);
+}
+
+/* TITLES */
+h3{
+    font-size:15px;
+    color:purple;
+}
+
+/* LINKS */
+a{
+    color:red;
+    font-weight:bold;
+}
+
+a:hover{
+    color:#53f507;
+}
+
+/* SIDEBAR */
+.sidebar{
+    background:url("bbbb.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding:20px;
+    border-radius:20px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:8px 0;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    margin-top:40px;
+}
+
+footer a{
+    background:#05f024;
+    padding:10px 15px;
+    border-radius:20px;
+    margin:5px;
+    display:inline-block;
+}
+/* BUTTERFLIES */
+.butterfly{
+    position:fixed;
+    width:90px;
+    height:90px;
+    background-image:url("true.gif"); /* pink butterfly image */
+    background-size:contain;
+    background-repeat:repeat;
+    pointer-events:none;
+    animation:fly 5s linear infinite;
+}
+
+/* Different butterfly positions */
+.b1{ top:20%; left:-50px; animation-delay:0s; }
+.b2{ top:40%; left:-80px; animation-delay:10s; }
+.b3{ top:70%; left:-100px; animation-delay:10; }
+.b4{ top:70%; left:-100px; animation-delay:10s; }
+.b5{ top:70%; left:-100px; animation-delay:10s; }
+.b6{ top:70%; left:-100px; animation-delay:10s; }
+.b7{ top:70%; left:-100px; animation-delay:10s; }
+.b8{ top:70%; left:-100px; animation-delay:20s; }
+.b9{ top:70%; left:-100px; animation-delay:20s; }
+.b10{ top:70%; left:-100px; animation-delay:20s; }
+
+
+/* Flying animation */
+@keyframes fly{
+    0%{
+        transform:translateX(0) translateY(0) rotate(0deg);
+    }
+    25%{
+        transform:translateX(300px) translateY(-40px) rotate(10deg);
+    }
+    50%{
+        transform:translateX(600px) translateY(20px) rotate(-10deg);
+    }
+    75%{
+        transform:translateX(900px) translateY(-30px) rotate(10deg);
+    }
+    100%{
+        transform:translateX(120vw) translateY(0) rotate(0deg);
+    }
+}
