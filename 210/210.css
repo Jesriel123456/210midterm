@@ -27,14 +27,14 @@ header{
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-    padding:200px;
+    padding: 80px;
     text-align:center;
     border-radius:20px;
 }
 
 header h1{
     font-family:'Pacifico',cursive;
-    font-size:80px;
+    font-size:70px;
     color:whitesmoke;
     text-shadow:3px 3px rgb(240, 7, 240);
 }
